@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>映像公開サイト</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body background="bac.jpg">
+<body>
     <form method="post" class="search-form-1">
         <input type="number" name="number" placeholder="サイト番号を入力" style="width: 100%;">
         <button type="submit"></button>
