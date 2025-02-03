@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST["number"];
     $allowedNumbers = [
-        "58247" => "/58247/",
+        "#####" => "/#####/",
         "456" => "https://example.com/site2"
     ];
 
