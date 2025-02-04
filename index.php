@@ -27,6 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="number" name="number" placeholder="サイト番号を入力" style="width: 100%;">
         <button type="submit"></button>
     </form>
-    <h2>hello</h2>
+    <h1 style="text-align: center;">利用方法</h1>
+    <div style="text-align: center;">
+        <iframe src="/explanation/pc.html" frameborder="0" width="500px" height="700px"></iframe>
+    </div>
 </body>
 </html>
