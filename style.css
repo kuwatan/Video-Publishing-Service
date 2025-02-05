@@ -1,4 +1,40 @@
-
+img {
+    width: 30%; /* 幅を固定 */
+    height: auto;
+    object-fit: cover; /* 画像を枠内に収める */
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+img {
+    width: 100%;
+    height: auto;
+}
+}
+.riyou {
+    background-color: #303030; /* ボタンの背景色 */
+    color: #ffffff; /* 文字色 */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* 角丸 */
+    margin: 5px; /* ボタン間の余白 */
+    transition: background-color 0.3s, transform 0.2s;
+}
+.custom-button {
+    background-color: #007bff; /* 青色 */
+    color: white; /* 文字色 */
+    border: none; /* 枠線なし */
+    padding: 10px 20px; /* 余白 */
+    font-size: 16px; /* 文字サイズ */
+    border-radius: 5px; /* 角丸 */
+    cursor: pointer; /* カーソルをポインタに */
+    transition: background-color 0.3s; /* 色の変化をスムーズに */
+}
+body {
+    text-align: center;
+    background-color: #767c6b;
+}
 .search-form-1 {
     display: flex;
     justify-content: space-between;
