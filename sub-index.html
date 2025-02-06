@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>映像制作</title>
+    <title>video</title>
 </head>
 <style>
 ul {
@@ -53,18 +53,28 @@ body {
 h2 {
   color: white;
 }
+.custom-button {
+    background-color: #303030; /* 青色 */
+    color: white; /* 文字色 */
+    border: none; /* 枠線なし */
+    padding: 10px 20px; /* 余白 */
+    font-size: 16px; /* 文字サイズ */
+    border-radius: 5px; /* 角丸 */
+    cursor: pointer; /* カーソルをポインタに */
+    transition: background-color 0.3s; /* 色の変化をスムーズに */
+}
 
 </style>
 <body>
     <ul>
       <li>
           <video controls controlslist="nodownload" preload="auto">
-              <source src="2024-12-18 17-06-38.mp4">
+              <source src="video.mp4">
               <p>video要素がサポートされていないブラウザでご覧になっています。</p>
           </video>
       </li>
     </ul>
-    
-    <h2>3-2ドラマ</h2>
+    <h2>サンプル</h2>
+    <input type="button" class="custom-button" onclick="location.href='/index.php'" value="ホームに戻る">
 </body>
 </html>
