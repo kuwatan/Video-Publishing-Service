@@ -2,8 +2,8 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST["number"];
     $allowedNumbers = [
-        "#####" => "/#####/",
-        "456" => "https://example.com/site2"
+        "#" => "/#/",
+        "#" => "/#/"
     ];
 
     if (array_key_exists($number, $allowedNumbers)) {
@@ -21,9 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>映像公開サイト</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.ico">
 </head>
 <body>
-    <form method="post" class="search-form-1">
+    <form method="post" class="search-form-1" autocomplete="off" id="myForm">
         <input type="number" name="number" placeholder="サイト番号を入力" style="width: 100%;">
         <button type="submit"></button>
     </form>
@@ -34,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br>
     <img id="changeImage" class="im" src="/explanation/pc.jpg" alt="画像" width="300">
     <br>
-    <input type="button" class="custom-button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdGun76ECY0vy4_xvZzu4PW6tCmsFAbjMPWVZ2cStLGJqZj5A/viewform?usp=dialog'" value="お問い合わせ">
+    <input type="button" class="custom-button" onclick="location.href='##'" value="お問い合わせ">
     <script>
         function changeImage(imageSrc) {
             document.getElementById("changeImage").src = imageSrc;
