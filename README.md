@@ -1,3 +1,11 @@
 会員制の映像公開サービスのバックアップ的な
 <br>
+auto.shはサイト自動で追加するやつ
+<br>
+index.phpはメインページ
+<br>
+style.cssはメインページのデザイン入ってるやつ
+<br>
+sub-index.htmlはログイン後のページ
+<br>
 ほぼChatGPTが書いてる
